@@ -1,2 +1,16 @@
-=What is a Blacklist?=
+=Blacklisting=
+
+==What is a Blacklist?==
 For a detailed, general explaination of _Blacklist_, take a look at [http://en.wikipedia.org/wiki/Blacklist this] link.
+
+==The use of blacklisting whithin W3Protect==
+In W3Protect, blacklisting is used for the following purposes:
+
+  * Permanent blocking of IP-addresses
+  * Blocking of access from certain countries
+  * Blocking of malicious IP-addresses
+
+=DNSBL=
+For a detailed, general explaination of _DNSBL_, take a look at [http://en.wikipedia.org/wiki/Dnsbl this] link.
+
+W3Protect uses publically available DNS Blacklist servers to be able to check whether an IP-address has a record of malicious activity and if so, it will block access from that IP-address. Adding it to the local blacklist.
