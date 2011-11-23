@@ -1,0 +1,2 @@
+=What is a Blacklist?=
+For a detailed, general explaination of _Blacklist_, take a look at [http://en.wikipedia.org/wiki/Blacklist this] link.
