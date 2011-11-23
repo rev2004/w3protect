@@ -20,4 +20,4 @@ Some of W3Protect its features are:
   ** Local File Inclusions
   * E-mail alerting to the administrator
 
-  * (maybe) A nice and clean webinterface to control it.
+  * A nice and clean webinterface to oversee it.
