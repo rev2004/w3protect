@@ -1,0 +1,21 @@
+_This page describes what LastCheck is._
+
+# LastCheck #
+
+The **LastCheck** value is a value within the md5sum table in the database. This value contains a timestamp of when the md5sum check was last executed. It needs this when md5sum checking is activated, to determine whether it should scan again or not.
+
+It compares this towards the current time() value. Think of the following pseudo-code:
+
+```
+  [client]->[database]: Give me the LastCheck value
+  [client]<-[database]: Okay. Value is currently: 1322041337
+
+  store "1322041337" into variable $lastcheck
+  store "time()" into variable $currenttime
+  store "getperiodfromConfig" into variable $period
+  store "calculate($currenttime + $period)" into variable $check
+
+  check if ($check is larger than $lastcheck)
+  if so: do md5sum check
+  if not: ignore
+```
